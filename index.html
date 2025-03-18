@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dress Shopping</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="w3-content w3-display-container">
+    <div class="header-background">
+      <img class="mySlides" src="B.5.jpg" style="width:100%">
+      <img class="mySlides" src="B.2 (2).jpg" style="width:100%">
+      <img class="mySlides" src="B.1.jpg" style="width:100%">
+      <img class="mySlides" src="B.4 (2).jpg" style="width:100%">
+
+
+    </div>
+    <header>
+      <div class="SSS">
+        <form class="search-form" action="#" method="get">
+          <input type="text" name="search" placeholder="Search...">
+          <button type="submit" class="search-button">Search</button>
+        </form>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><button class="view-cart" id="view-cart-btn" style="vertical-align:middle" onclick="viewCart()"><span>View
+                Shopping Cart 🛒</span></button>
+            <ul id="cart-items">
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+    <div class="grid-container">
+      <div class="dresses-list">
+        <div class="row">
+          <div class="column">
+            <img
+              src="https://di2ponv0v5otw.cloudfront.net/posts/2022/02/08/62029d65045e3990c82ad8af/s_62029e713a0db96d8544fbef.jpg"
+              alt="Dress 1">
+
+            <h2>Green Polka Dot Dress</h2>
+             <p>
+                <p>Price: $58</p>
+            <button class="description" style="vertical-align: middle"
+              onclick="toggleDescription('The green polka dot dress is versatile, ideal for a range of occasions. It suits a daytime picnic, garden party, or even a semi-formal event with the right accessories and shoes.',1)">
+              <span>Description</span>
+            </button>
+            <div id="product-description-1" style="display: none;"></div>
+           
+            <button class="add-to-cart" style="vertical-align:middle"
+              onclick="addToCart('Green Polka Dot Dress', 58, 'https://di2ponv0v5otw.cloudfront.net/posts/2022/02/08/62029d65045e3990c82ad8af/s_62029e713a0db96d8544fbef.jpg')"><span>Add
+                to Cart 🛒</span></button>
+          </div>
+
+          <div class="column">
+            <img src="https://m.media-amazon.com/images/I/71UDK1pDrcL._AC_UY1000_DpWeblab_.jpg" alt="Dress 2">
+            <h2>Boho Flowly Loose</h2>
+             <p>
+               <p>Price: $75</p>
+            <button class="description" style="vertical-align: middle"
+              onclick="toggleDescription('The boho flowy dress radiates casual elegance with its loose silhouette and bohemian flair, perfect for relaxed outings or beach days.',2)">
+              <span>Description</span>
+            </button>
+            <div id="product-description-2" style="display: none;"></div>
+            
+            <button class="add-to-cart" style="vertical-align:middle"
+              onclick="addToCart('Boho Flowly Loose', 75,'https://m.media-amazon.com/images/I/71UDK1pDrcL._AC_UY1000_DpWeblab_.jpg')"><span>Add
+                to Cart 🛒</span></button>
+          </div>
+
+          <div class="column">
+            <img
+              src="https://img.ltwebstatic.com/images3_pi/2023/04/28/1682652740b7951d6f0a81f712b1b42181c402f67e_thumbnail_405x552.jpg"
+              alt="Dress 3">
+            <h2>Floral Dress</h2>
+            <p>
+               <p>Price: $65</p>
+              <button class="description" style="vertical-align: middle"
+                onclick="toggleDescription('The floral dress is a timeless wardrobe staple, adorned with beautiful blooms that add a touch of femininity and charm.',3)">
+                <span>Description</span>
+              </button>
+            <div id="product-description-3" style="display: none;"></div>
+           
+            <button class="add-to-cart" style="vertical-align:middle"
+              onclick="addToCart('Floral Dress', 65, 'https://img.ltwebstatic.com/images3_pi/2023/04/28/1682652740b7951d6f0a81f712b1b42181c402f67e_thumbnail_405x552.jpg')"><span>Add
+                to
+                Cart 🛒</span></button>
+          </div>
+
+          <div class="column">
+            <img src="https://image.dhgate.com/webp/m/0x0/f2/albu/g20/M00/78/2B/rBNaOGHvOTSAKdr4AAMwV5oq0rA246.jpg"
+              alt="Dress 4">
+            <h2>Push Up Midi Dress</h2>
+             <p>
+                <p>Price: $80</p>
+            <button class="description" style="vertical-align: middle"
+              onclick="toggleDescription(' A push-up midi dress is a stylish garment designed to accentuate your figure, typically featuring a fitted bodice that enhances your bust line.',4)">
+              <span>Description</span>
+            </button>
+            <div id="product-description-4" style="display: none;"></div>
+           
+            <button class="add-to-cart" style="vertical-align:middle"
+              onclick="addToCart('Push Up Midi Dress', 80, 'https://image.dhgate.com/webp/m/0x0/f2/albu/g20/M00/78/2B/rBNaOGHvOTSAKdr4AAMwV5oq0rA246.jpg')"><span>Add
+                to Cart 🛒</span></button>
+          </div>
+
+          <div class="column">
+            <img src="https://4.imimg.com/data4/SX/BH/ANDROID-10178412/product-250x250.jpeg" alt="Dress 5">
+            <h2>One Piece Dress</h2>
+             <p>
+               <p>Price: $97</p>
+            <button class="description" style="vertical-align: middle"
+              onclick="toggleDescription('A one-piece dress: effortlessly stylish and convenient, perfect for any occasion with its simplicity and elegance. Flaunt your fashion effortlessly in this versatile ensemble.',5)">
+              <span>Description</span>
+            </button>
+            <div id="product-description-5" style="display: none;"></div>
+          
+            <button class="add-to-cart" style="vertical-align:middle"
+              onclick="addToCart('One Piece Dress', 96, 'https://4.imimg.com/data4/SX/BH/ANDROID-10178412/product-250x250.jpeg')"><span>Add
+                to Cart 🛒</span></button>
+          </div>
+
+          <div class="column">
+            <img src="https://s.alicdn.com/@sc04/kf/H885d07d986fb4039b94638a9a8e9a834u.jpg_300x300.jpg" alt="Dress 6">
+            <h2>Summer Chic Long Sunny Dress</h2>
+             <p>
+               <p>Price: $120</p>
+            <button class="description" style="vertical-align: middle"
+              onclick="toggleDescription('A chic sunny dress: radiates effortless charm and vibrancy, perfect for soaking up the sun in style. Flaunt your fashion in this breezy ensemble, guaranteed to brighten any day.',6)">
+              <span>Description</span>
+            </button>
+            <div id="product-description-6" style="display: none;"></div>
+            <button class="add-to-cart" style="vertical-align:middle"
+              onclick="addToCart('Chic Sunny Dress', 120, 'https://s.alicdn.com/@sc04/kf/H885d07d986fb4039b94638a9a8e9a834u.jpg_300x300.jpg')"><span>Add
+                to Cart 🛒</span></button>
+          </div>
+
+          <div class="column">
+            <img
+              src="https://ae01.alicdn.com/kf/S717bebca10f149beb2c99bd924046ff07.jpg_640x640q90.jpg?width=800&height=800&hash=1600"
+              alt="Dress 7">
+            <h2>Long Satin Evening Dress</h2>
+             <p>
+                <p>Price: $100</p>
+            <button class="description" style="vertical-align: middle"
+              onclick="toggleDescription('A satin evening dress: epitome of elegance and luxury, perfect for special occasions with its graceful silhouette and luxurious fabric.',7)">
+              <span>Description</span>
+            </button>
+            <div id="product-description-7" style="display: none;"></div>
+            <button class="add-to-cart" style="vertical-align:middle"
+              onclick="addToCart('Satin Evening Dress', 100, 'https://ae01.alicdn.com/kf/S717bebca10f149beb2c99bd924046ff07.jpg_640x640q90.jpg?width=800&height=800&hash=1600')"><span>Add
+                to Cart 🛒</span></button>
+          </div>
+
+          <div class="column">
+            <img src="https://i.ebayimg.com/images/g/hgEAAOSwcBdkWzhp/s-l1600.jpg" alt="Dress 8">
+            <h2>Sipper High Waist Swing Ball Dress</h2>
+             <p>
+                <p>Price: $48</p>
+            <button class="description" style="vertical-align: middle"
+              onclick="toggleDescription('The Sipper High Waist Swing Ball Dress: vintage charm meets modern elegance, ideal for captivating attention on the dance floor with its chic silhouette.',8)">
+              <span>Description</span>
+            </button>
+            <div id="product-description-8" style="display: none;"></div>
+            <button class="add-to-cart" style="vertical-align:middle"
+              onclick="addToCart('Sipper High Waist Swing Ball Dress', 48, 'https://i.ebayimg.com/images/g/hgEAAOSwcBdkWzhp/s-l1600.jpg')"><span>Add
+                to Cart
+                🛒</span></button>
+          </div>
+
+          <div class="column">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJmy4gelRWfB9CHr9LchwzRT5h7by0hNkduiE3ChRJUuX9ZCcPgKy29QGTlJmATPO1YXc&usqp=CAU"
+              alt="Dress 9">
+            <h2>Del Mundo Puerta Dress</h2>
+             <p>
+               <p>Price: $90</p>
+            <button class="description" style="vertical-align: middle"
+              onclick="toggleDescription('The Tiendamia Del Mundo A Tu Puerta Dress: global style, doorstep delivery. Flaunt versatile chic with ease.',9)">
+              <span>Description</span>
+            </button>
+            <div id="product-description-9" style="display: none;"></div>
+            
+            <button class="add-to-cart" style="vertical-align:middle"
+              onclick="addToCart('Tiendamia Del Mundo A Tu Puerta Dress', 90, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJmy4gelRWfB9CHr9LchwzRT5h7by0hNkduiE3ChRJUuX9ZCcPgKy29QGTlJmATPO1YXc&usqp=CAU')"><span>Add
+                to Cart
+                🛒</span></button>
+          </div>
+
+          <div class="column">
+            <img src="https://m.media-amazon.com/images/I/71cM8KpJS7L._AC_UY1000_.jpg" alt="Dress 10">
+            <h2>One-Shoulder Defined Waist</h2>
+             <p>
+               <p>Price: $80</p>
+            <button class="description" style="vertical-align: middle"
+              onclick="toggleDescription('The One-Shoulder Defined Waist dress: modern elegance in a single shoulder, defining your silhouette with style and sophistication.',10)">
+              <span>Description</span>
+            </button>
+            <div id="product-description-10" style="display: none;"></div>
+
+           
+            <button class="add-to-cart" style="vertical-align:middle"
+              onclick="addToCart('One-Shoulder Defined Waist', 80, 'https://m.media-amazon.com/images/I/71cM8KpJS7L._AC_UY1000_.jpg')"><span>Add
+                to Cart 🛒</span></button>
+          </div>
+          
+        </div>
+      </div>
+      <div class="shopping-cart"></div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Your shopping cart is empty.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>&copy; 2024 Dress Shop. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
