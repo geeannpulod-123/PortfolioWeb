@@ -1,0 +1,273 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #ffff;
+  width: 100%;
+}
+
+.header-background img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-container {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  background-color: darkkhaki;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+  margin: auto;
+  font-family: arial;
+  background-color: #fbffde;
+  flex-basis: 250px;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.column img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  transition: 0.8s all ease-in-out;
+  border-radius: 20px;
+
+}
+
+.column {
+  flex-basis: 260px;
+  padding: 50px;
+  padding-bottom: 50px;
+}
+
+.SSS {
+  background-color: #96a540;
+
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 0%;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 27px;
+  color: #333;
+  margin: 0;
+}
+
+.header-background {
+  max-width: 100%;
+}
+
+.column:hover img {
+  transform: scale(1.5);
+}
+
+.search-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  width: 10%;
+  transition-duration: .5s;
+}
+
+.search-button:hover {
+  background-color: khaki;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  background-color: #C8C8C8;
+  font-size: 30px;
+  font-family: 'Times New Roman';
+}
+
+.menu li:hover {
+  background-color: #C0C0C0;
+}
+
+.p {
+  color: grey;
+  font-size: 25px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px 20px;
+
+}
+
+
+button.add-to-cart {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.5s;
+  width: 100%;
+  
+}
+
+button.add-to-cart:hover span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  padding-right: 25px;
+}
+
+button.add-to-cart:hover span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button.add-to-cart:hover {
+  background-color: darkkhaki;
+
+}
+
+button.view-cart {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.5s;
+}
+
+button.view-cart:hover {
+  background-color: darkkhaki;
+}
+
+button.view-cart:hover span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  padding-right: 25px;
+}
+
+button.view-cart:hover span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.shopping-cart {
+  margin-top: 40px;
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+}
+
+.shopping-cart ul {
+  list-style-type: none;
+  padding: 50px;
+}
+
+.shopping-cart li {
+  margin-bottom: 10px;
+}
+
+.shopping-cart p {
+  margin-top: 0;
+  font-weight: bold;
+
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.description {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.5s;
+  width: 100%;
+
+}
+
+.description:hover span {
+  display: inline-block;
+  position: relative;
+  padding-right: 25px;
+}
